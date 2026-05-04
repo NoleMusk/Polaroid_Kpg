@@ -1,0 +1,248 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px -5px 22px 10px rgba(0,0,0,0.21);
+-webkit-box-shadow: 0px -5px 22px 10px rgba(0,0,0,0.10);
+-moz-box-shadow: 0px -5px 22px 10px rgba(0,0,0,0.21);
+}
+
+h1 {
+  height: 100%;
+  padding: 0.5rem;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul li a:hover,
+nav i:hover {
+  color: white;
+  background-color: black;
+}
+
+nav .menu-toggle i {
+  height: 100%;
+  display: none;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 34px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    position: static;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  nav ul {
+    display: none; /* ← Tersembunyi by default */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 50px; /* Tepat di bawah header */
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+  }
+  nav ul.active {
+    display: flex;
+     /* ← Muncul saat toggle diklik */
+  }
+
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  nav ul li a {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  nav .menu-toggle i {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+main .hero {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+}
+
+main .hero .hero-text h2 {
+  font-size: 50px;
+}
+
+main .hero .hero-cta {
+  margin-top: 3rem;
+}
+
+main .hero .hero-cta a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 1rem 1rem;
+  font-weight: 600;
+  font-size: 20px;
+  border: solid 1px rgba(0, 0, 0, 0);
+}
+
+main .hero .hero-cta a:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+main .content {
+  border: solid 1px black;
+  width: 100%;
+  background-color: rgb(61, 61, 61);
+}
+
+main .content .content-header {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+main .content .content-header h2 {
+  border-bottom: solid 5px #eee;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+main .content .content-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+main .content .content-body .content-item {
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+main .content .content-body .content-item h3 {
+  font-size: 30px;
+  padding: 0.5rem 0;
+}
+
+main .content .content-body .content-item p {
+  font-size: 18px;
+} 
+
+main .content .content-body .content-item button {
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main .content .content-body .content-item button a {
+  text-decoration: none;
+  color: white;
+}
+
+main .pemesanan {
+  border: solid 1px black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .pemesanan .pemesanan-header {
+  width: 90%;
+  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+main .pemesanan form {
+  width: 90%;
+  border: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+form input {
+  margin: 5px 0 16px 0;
+  padding: 0.5rem;
+}
+
+form button {
+  background-color: black;
+  color: white;
+  padding: 0.8rem 0;
+  border: none;
+  font-size: 18px
+}
