@@ -1,0 +1,1 @@
+https://api.whatsapp.com/send?phone=6285238306774&text=Halo%2C%20saya%20ingin%20memesan%20%7Bfoto%7D%20foto%20Polaroid%0ANama%20pemesan%3A%20%7Bnama%7D%0ALokasi%20pengantaran%3A%20%7Balamat%7D%0ATerimakasih
